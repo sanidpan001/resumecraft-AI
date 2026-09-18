@@ -1,0 +1,3497 @@
+````html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- =========================================================
+       AI RESUME BUILDER
+       Single-file responsive website
+       No watermark • No subscription • Unlimited local usage
+       ========================================================= -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>AI Resume Builder – Create Professional Resumes Online Free</title>
+
+  <meta
+    name="description"
+    content="Create a professional ATS-friendly resume with our free AI Resume Builder. Generate resume summaries, experience descriptions, skills and complete resumes with AI. No watermark, no subscription and unlimited usage."
+  >
+
+  <meta
+    name="keywords"
+    content="AI resume builder, free resume builder, AI CV maker, free CV builder, ATS resume builder, professional resume maker, resume generator, AI CV generator, online resume builder, job resume maker"
+  >
+
+  <meta name="author" content="AI Resume Builder">
+
+  <meta name="robots" content="index, follow, max-image-preview:large">
+
+  <link
+    rel="canonical"
+    href="https://your-domain.com/"
+  >
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="AI Resume Builder – Create Professional Resumes">
+  <meta
+    property="og:description"
+    content="Build a professional, ATS-friendly resume using AI. Free, fast and easy to use."
+  >
+  <meta property="og:url" content="https://your-domain.com/">
+  <meta property="og:site_name" content="ResumeCraft AI">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AI Resume Builder">
+  <meta
+    name="twitter:description"
+    content="Create professional resumes with AI for free."
+  >
+
+  <!-- Theme -->
+  <meta name="theme-color" content="#6d5dfc">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- =========================================================
+       AD 1 - HIGH REVENUE FORMAT
+       ========================================================= -->
+
+  <script>
+    atOptions = {
+      'key' : '4e68ac77881c17fe128a46565d9a4e8c',
+      'format' : 'iframe',
+      'height' : 90,
+      'width' : 728,
+      'params' : {}
+    };
+  </script>
+
+  <script
+    src="https://www.highrevenueformat.com/4e68ac77881c17fe128a46565d9a4e8c/invoke.js">
+  </script>
+
+  <!-- =========================================================
+       AD 2 - CLICKADILLA
+       ========================================================= -->
+
+  <script
+    async
+    src="https://js.wpadmngr.com/static/adManager.js"
+    data-admpid="464498">
+  </script>
+
+  <!-- =========================================================
+       STRUCTURED DATA
+       ========================================================= -->
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "ResumeCraft AI",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "description": "Free AI-powered resume builder for creating professional and ATS-friendly resumes.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "featureList": [
+      "AI resume generation",
+      "ATS-friendly resume content",
+      "Professional resume formatting",
+      "AI summary generator",
+      "AI experience generator",
+      "AI skills suggestions",
+      "Resume preview",
+      "Print and PDF support"
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is this AI resume builder free?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. The website is designed as a free resume creation tool with no subscription requirement."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I create an ATS-friendly resume?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. The builder focuses on clear sections, standard headings and readable resume content suitable for ATS-friendly formatting."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I download my resume?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. You can use the browser print dialog to save the generated resume as a PDF."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need a subscription?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No subscription is required by the website."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    /* =========================================================
+       RESET
+       ========================================================= */
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      background:
+        radial-gradient(
+          circle at top left,
+          rgba(109, 93, 252, 0.12),
+          transparent 35%
+        ),
+        #f7f8fc;
+      color: #161827;
+      line-height: 1.65;
+    }
+
+    button,
+    input,
+    textarea,
+    select {
+      font: inherit;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    /* =========================================================
+       VARIABLES
+       ========================================================= */
+
+    :root {
+      --primary: #6d5dfc;
+      --primary-dark: #5143d8;
+      --secondary: #8f7cff;
+      --text: #161827;
+      --muted: #687083;
+      --border: #e4e7ef;
+      --card: rgba(255,255,255,0.9);
+      --white: #ffffff;
+      --success: #159957;
+      --danger: #d83a52;
+      --shadow:
+        0 20px 60px rgba(35, 32, 83, 0.10);
+      --radius: 22px;
+    }
+
+    /* =========================================================
+       HEADER
+       ========================================================= */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      backdrop-filter: blur(18px);
+      background: rgba(255,255,255,0.88);
+      border-bottom: 1px solid rgba(228,231,239,0.8);
+    }
+
+    .nav {
+      width: min(1180px, 92%);
+      margin: auto;
+      height: 74px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      font-family: "Manrope", sans-serif;
+      font-weight: 800;
+      font-size: 20px;
+    }
+
+    .brand-logo {
+      width: 42px;
+      height: 42px;
+      border-radius: 13px;
+      display: grid;
+      place-items: center;
+      color: white;
+      background:
+        linear-gradient(
+          135deg,
+          var(--primary),
+          var(--secondary)
+        );
+      box-shadow:
+        0 10px 24px rgba(109,93,252,0.28);
+    }
+
+    .brand-logo svg {
+      width: 22px;
+      height: 22px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .nav-link {
+      padding: 10px 15px;
+      border-radius: 12px;
+      color: #444a5b;
+      font-weight: 600;
+      transition: 0.2s ease;
+    }
+
+    .nav-link:hover {
+      background: #f0efff;
+      color: var(--primary);
+    }
+
+    .more-tools {
+      background:
+        linear-gradient(
+          135deg,
+          var(--primary),
+          var(--secondary)
+        );
+      color: white;
+      box-shadow:
+        0 8px 20px rgba(109,93,252,0.20);
+    }
+
+    .more-tools:hover {
+      color: white;
+      transform: translateY(-1px);
+    }
+
+    /* =========================================================
+       AD CONTAINERS
+       ========================================================= */
+
+    .ad-section {
+      width: min(1100px, 94%);
+      margin: 22px auto;
+      min-height: 110px;
+      border-radius: 16px;
+      background: white;
+      border: 1px dashed #d8dbe7;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .ad-label {
+      position: absolute;
+      top: 5px;
+      left: 9px;
+      font-size: 9px;
+      color: #9aa0af;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .ad-slot {
+      min-height: 90px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+
+    /* =========================================================
+       HERO
+       ========================================================= */
+
+    .hero {
+      width: min(1120px, 92%);
+      margin: 40px auto 30px;
+      text-align: center;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 8px 13px;
+      border-radius: 999px;
+      background: #eeecff;
+      color: var(--primary-dark);
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 17px;
+    }
+
+    .hero h1 {
+      font-family: "Manrope", sans-serif;
+      font-size: clamp(36px, 6vw, 68px);
+      line-height: 1.04;
+      letter-spacing: -2.7px;
+      max-width: 950px;
+      margin: auto;
+    }
+
+    .gradient-text {
+      background:
+        linear-gradient(
+          90deg,
+          #6d5dfc,
+          #9c75ff,
+          #4f8cff
+        );
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .hero p {
+      max-width: 720px;
+      margin: 20px auto 0;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .hero-points {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .hero-point {
+      background: white;
+      border: 1px solid var(--border);
+      padding: 8px 13px;
+      border-radius: 999px;
+      font-size: 12px;
+      color: #4f5667;
+      font-weight: 600;
+    }
+
+    /* =========================================================
+       BUILDER
+       ========================================================= */
+
+    .builder-wrapper {
+      width: min(1200px, 94%);
+      margin: 35px auto 60px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      align-items: start;
+    }
+
+    .panel {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .panel-header {
+      padding: 22px 24px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+    }
+
+    .panel-title {
+      font-family: "Manrope", sans-serif;
+      font-size: 20px;
+      font-weight: 800;
+    }
+
+    .panel-subtitle {
+      color: var(--muted);
+      font-size: 12px;
+      margin-top: 3px;
+    }
+
+    .panel-body {
+      padding: 22px;
+    }
+
+    /* =========================================================
+       FORM
+       ========================================================= */
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+
+    .full {
+      grid-column: 1 / -1;
+    }
+
+    .field {
+      margin-bottom: 2px;
+    }
+
+    .field label {
+      display: block;
+      font-size: 12px;
+      font-weight: 700;
+      color: #42485a;
+      margin-bottom: 7px;
+    }
+
+    .field input,
+    .field textarea,
+    .field select {
+      width: 100%;
+      border: 1px solid #dfe2eb;
+      background: #fbfcff;
+      border-radius: 12px;
+      padding: 12px 13px;
+      outline: none;
+      color: var(--text);
+      transition: 0.2s ease;
+    }
+
+    .field textarea {
+      min-height: 100px;
+      resize: vertical;
+    }
+
+    .field input:focus,
+    .field textarea:focus,
+    .field select:focus {
+      border-color: var(--primary);
+      box-shadow:
+        0 0 0 4px rgba(109,93,252,0.09);
+      background: white;
+    }
+
+    .section-label {
+      grid-column: 1 / -1;
+      font-family: "Manrope", sans-serif;
+      font-size: 14px;
+      font-weight: 800;
+      margin-top: 7px;
+      padding-top: 8px;
+      border-top: 1px solid #edf0f5;
+    }
+
+    .ai-button {
+      width: 100%;
+      border: none;
+      color: white;
+      padding: 14px 18px;
+      border-radius: 13px;
+      background:
+        linear-gradient(
+          135deg,
+          var(--primary),
+          #8d73ff
+        );
+      font-weight: 800;
+      margin-top: 17px;
+      box-shadow:
+        0 12px 25px rgba(109,93,252,0.24);
+      transition: 0.2s ease;
+    }
+
+    .ai-button:hover {
+      transform: translateY(-2px);
+    }
+
+    .ai-button:disabled {
+      opacity: 0.65;
+      cursor: wait;
+      transform: none;
+    }
+
+    .secondary-actions {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .secondary-button {
+      border: 1px solid var(--border);
+      background: white;
+      color: #4b5162;
+      padding: 11px;
+      border-radius: 12px;
+      font-weight: 700;
+    }
+
+    .secondary-button:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+
+    .status {
+      min-height: 22px;
+      margin-top: 12px;
+      font-size: 12px;
+      text-align: center;
+      color: var(--muted);
+    }
+
+    /* =========================================================
+       RESUME PREVIEW
+       ========================================================= */
+
+    .preview-area {
+      background: #eef0f6;
+      padding: 20px;
+      min-height: 700px;
+    }
+
+    .resume-paper {
+      width: 100%;
+      max-width: 760px;
+      margin: auto;
+      background: white;
+      color: #222;
+      min-height: 1050px;
+      padding: 48px;
+      box-shadow:
+        0 20px 50px rgba(0,0,0,0.12);
+    }
+
+    .resume-name {
+      font-family: "Manrope", sans-serif;
+      font-size: 31px;
+      font-weight: 800;
+      letter-spacing: -0.7px;
+      color: #171923;
+    }
+
+    .resume-role {
+      margin-top: 3px;
+      color: var(--primary-dark);
+      font-weight: 700;
+      font-size: 15px;
+    }
+
+    .resume-contact {
+      margin-top: 10px;
+      font-size: 11px;
+      color: #626776;
+      line-height: 1.8;
+    }
+
+    .resume-divider {
+      height: 2px;
+      background: #e7e8ee;
+      margin: 20px 0;
+    }
+
+    .resume-section {
+      margin-top: 21px;
+    }
+
+    .resume-section h3 {
+      font-family: "Manrope", sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 1.1px;
+      font-size: 12px;
+      color: #4f42c7;
+      margin-bottom: 9px;
+    }
+
+    .resume-section p,
+    .resume-section li {
+      font-size: 11.5px;
+      color: #414550;
+      line-height: 1.65;
+    }
+
+    .resume-section ul {
+      padding-left: 17px;
+    }
+
+    .experience-item {
+      margin-bottom: 15px;
+    }
+
+    .experience-heading {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .experience-company {
+      color: #5a6070;
+      font-weight: 600;
+      margin-top: 2px;
+      font-size: 11px;
+    }
+
+    .skill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .skill {
+      border: 1px solid #dfe2ea;
+      border-radius: 5px;
+      padding: 4px 7px;
+      font-size: 10px;
+    }
+
+    .print-button {
+      width: 100%;
+      border: none;
+      background: #171923;
+      color: white;
+      border-radius: 12px;
+      padding: 13px;
+      margin-top: 15px;
+      font-weight: 800;
+    }
+
+    /* =========================================================
+       CONTENT
+       ========================================================= */
+
+    .content {
+      width: min(1050px, 92%);
+      margin: 60px auto;
+    }
+
+    .content h2 {
+      font-family: "Manrope", sans-serif;
+      font-size: clamp(28px, 4vw, 42px);
+      line-height: 1.15;
+      margin-bottom: 17px;
+      letter-spacing: -1px;
+    }
+
+    .content h3 {
+      font-family: "Manrope", sans-serif;
+      font-size: 24px;
+      margin-top: 40px;
+      margin-bottom: 12px;
+    }
+
+    .content p {
+      color: #596071;
+      margin-bottom: 15px;
+      font-size: 15px;
+    }
+
+    .content ul,
+    .content ol {
+      padding-left: 24px;
+      margin-bottom: 17px;
+      color: #596071;
+    }
+
+    .content li {
+      margin-bottom: 8px;
+    }
+
+    .info-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 24px;
+      margin: 20px 0;
+      box-shadow: 0 10px 30px rgba(35,32,83,0.05);
+    }
+
+    .info-card strong {
+      color: #262a39;
+    }
+
+    /* =========================================================
+       FAQ
+       ========================================================= */
+
+    .faq {
+      width: min(900px, 92%);
+      margin: 70px auto;
+    }
+
+    .faq h2 {
+      font-family: "Manrope", sans-serif;
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    details {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 15px;
+      margin-bottom: 10px;
+      padding: 17px 20px;
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: 800;
+      color: #282c3a;
+    }
+
+    details p {
+      color: #646b7a;
+      margin-top: 12px;
+      font-size: 14px;
+    }
+
+    /* =========================================================
+       FOOTER
+       ========================================================= */
+
+    footer {
+      background: #11131d;
+      color: #b7bbc8;
+      margin-top: 70px;
+    }
+
+    .footer-inner {
+      width: min(1100px, 92%);
+      margin: auto;
+      padding: 50px 0 25px;
+    }
+
+    .footer-top {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 40px;
+    }
+
+    .footer-brand {
+      color: white;
+      font-family: "Manrope", sans-serif;
+      font-size: 22px;
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+
+    footer p {
+      font-size: 13px;
+      line-height: 1.8;
+    }
+
+    footer h4 {
+      color: white;
+      margin-bottom: 12px;
+    }
+
+    .footer-links {
+      display: grid;
+      gap: 8px;
+      font-size: 13px;
+    }
+
+    .footer-links a:hover {
+      color: white;
+    }
+
+    .copyright {
+      border-top: 1px solid #292c38;
+      margin-top: 40px;
+      padding-top: 20px;
+      font-size: 12px;
+      text-align: center;
+    }
+
+    /* =========================================================
+       TOAST
+       ========================================================= */
+
+    .toast {
+      position: fixed;
+      bottom: 22px;
+      left: 50%;
+      transform: translate(-50%, 120px);
+      background: #191b26;
+      color: white;
+      padding: 12px 18px;
+      border-radius: 12px;
+      font-size: 13px;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.22);
+      opacity: 0;
+      transition: 0.3s ease;
+      z-index: 9999;
+    }
+
+    .toast.show {
+      transform: translate(-50%, 0);
+      opacity: 1;
+    }
+
+    /* =========================================================
+       MOBILE
+       ========================================================= */
+
+    @media (max-width: 850px) {
+
+      .nav {
+        height: 65px;
+      }
+
+      .nav-links {
+        gap: 3px;
+      }
+
+      .nav-link {
+        padding: 8px 9px;
+        font-size: 12px;
+      }
+
+      .brand {
+        font-size: 16px;
+      }
+
+      .brand-logo {
+        width: 35px;
+        height: 35px;
+        border-radius: 10px;
+      }
+
+      .builder-wrapper {
+        grid-template-columns: 1fr;
+      }
+
+      .preview-area {
+        min-height: auto;
+      }
+
+      .resume-paper {
+        padding: 28px;
+      }
+
+      .footer-top {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 600px) {
+
+      .hero {
+        margin-top: 28px;
+      }
+
+      .hero h1 {
+        font-size: 38px;
+        letter-spacing: -1.8px;
+      }
+
+      .hero p {
+        font-size: 14px;
+      }
+
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .full {
+        grid-column: auto;
+      }
+
+      .section-label {
+        grid-column: auto;
+      }
+
+      .panel-body {
+        padding: 16px;
+      }
+
+      .resume-paper {
+        padding: 22px;
+        min-height: 850px;
+      }
+
+      .resume-name {
+        font-size: 25px;
+      }
+
+      .footer-top {
+        grid-template-columns: 1fr;
+      }
+
+      /*
+       Smaller ad container on mobile.
+       The external ad provider determines its actual rendering.
+      */
+
+      .ad-section {
+        width: 94%;
+        min-height: 70px;
+        margin: 14px auto;
+      }
+
+      .ad-slot {
+        min-height: 60px;
+        transform: scale(0.58);
+        transform-origin: center;
+      }
+
+      .ad-label {
+        font-size: 7px;
+      }
+    }
+
+    /* =========================================================
+       PRINT
+       ========================================================= */
+
+    @media print {
+
+      body {
+        background: white;
+      }
+
+      header,
+      .hero,
+      .ad-section,
+      .builder-wrapper > .panel:first-child,
+      .print-button,
+      .content,
+      .faq,
+      footer,
+      .toast {
+        display: none !important;
+      }
+
+      .builder-wrapper {
+        display: block;
+        width: 100%;
+        margin: 0;
+      }
+
+      .panel {
+        border: none;
+        box-shadow: none;
+      }
+
+      .panel-header {
+        display: none;
+      }
+
+      .preview-area {
+        padding: 0;
+        background: white;
+      }
+
+      .resume-paper {
+        box-shadow: none;
+        max-width: none;
+        min-height: auto;
+        padding: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- =========================================================
+       HEADER
+       ========================================================= -->
+
+  <header>
+    <nav class="nav" aria-label="Main navigation">
+
+      <a href="#" class="brand" aria-label="ResumeCraft AI home">
+
+        <span class="brand-logo">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            aria-hidden="true"
+          >
+            <path d="M7 3h8l4 4v14H7z"/>
+            <path d="M15 3v5h5"/>
+            <path d="M10 13h6"/>
+            <path d="M10 17h5"/>
+          </svg>
+        </span>
+
+        <span>ResumeCraft AI</span>
+
+      </a>
+
+      <div class="nav-links">
+
+        <a href="#" class="nav-link">
+          Home
+        </a>
+
+        <a
+          href="https://fixoraa.tech"
+          class="nav-link more-tools"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          More Tools
+        </a>
+
+      </div>
+
+    </nav>
+  </header>
+
+  <!-- =========================================================
+       TOP AD
+       ========================================================= -->
+
+  <section class="ad-section" aria-label="Advertisement">
+
+    <span class="ad-label">
+      Advertisement
+    </span>
+
+    <div class="ad-slot">
+      <!-- HighRevenueFormat ad script is loaded in HEAD -->
+    </div>
+
+  </section>
+
+  <!-- =========================================================
+       HERO
+       ========================================================= -->
+
+  <main>
+
+    <section class="hero">
+
+      <div class="badge">
+        ✦ AI-Powered Resume Builder
+      </div>
+
+      <h1>
+        Build a
+        <span class="gradient-text">
+          Professional Resume
+        </span>
+        in Minutes
+      </h1>
+
+      <p>
+        Create polished, professional and ATS-friendly resume content
+        with the help of AI. Write your information once and let the
+        builder improve your resume wording.
+      </p>
+
+      <div class="hero-points">
+
+        <span class="hero-point">
+          ✓ Free to use
+        </span>
+
+        <span class="hero-point">
+          ✓ No watermark
+        </span>
+
+        <span class="hero-point">
+          ✓ No subscription
+        </span>
+
+        <span class="hero-point">
+          ✓ Print to PDF
+        </span>
+
+        <span class="hero-point">
+          ✓ Mobile friendly
+        </span>
+
+      </div>
+
+    </section>
+
+    <!-- =======================================================
+         BUILDER
+         ======================================================= -->
+
+    <section
+      class="builder-wrapper"
+      id="builder"
+      aria-label="AI Resume Builder"
+    >
+
+      <!-- =====================================================
+           INPUT PANEL
+           ===================================================== -->
+
+      <div class="panel">
+
+        <div class="panel-header">
+
+          <div>
+            <div class="panel-title">
+              Resume Information
+            </div>
+
+            <div class="panel-subtitle">
+              Enter your details and generate better resume content.
+            </div>
+          </div>
+
+        </div>
+
+        <div class="panel-body">
+
+          <div class="form-grid">
+
+            <div class="field">
+              <label for="fullName">
+                Full Name
+              </label>
+
+              <input
+                id="fullName"
+                type="text"
+                placeholder="e.g. Alex Johnson"
+              >
+            </div>
+
+            <div class="field">
+              <label for="jobTitle">
+                Target Job Title
+              </label>
+
+              <input
+                id="jobTitle"
+                type="text"
+                placeholder="e.g. Frontend Developer"
+              >
+            </div>
+
+            <div class="field">
+              <label for="email">
+                Email
+              </label>
+
+              <input
+                id="email"
+                type="email"
+                placeholder="alex@example.com"
+              >
+            </div>
+
+            <div class="field">
+              <label for="phone">
+                Phone
+              </label>
+
+              <input
+                id="phone"
+                type="text"
+                placeholder="+91 98765 43210"
+              >
+            </div>
+
+            <div class="field full">
+              <label for="location">
+                Location
+              </label>
+
+              <input
+                id="location"
+                type="text"
+                placeholder="Kolkata, India"
+              >
+            </div>
+
+            <div class="section-label">
+              Professional Summary
+            </div>
+
+            <div class="field full">
+
+              <label for="summary">
+                About You
+              </label>
+
+              <textarea
+                id="summary"
+                placeholder="Write a few lines about yourself, your experience, strengths or career goals..."
+              ></textarea>
+
+            </div>
+
+            <div class="section-label">
+              Experience
+            </div>
+
+            <div class="field">
+
+              <label for="company">
+                Company
+              </label>
+
+              <input
+                id="company"
+                type="text"
+                placeholder="Company name"
+              >
+
+            </div>
+
+            <div class="field">
+
+              <label for="role">
+                Role
+              </label>
+
+              <input
+                id="role"
+                type="text"
+                placeholder="Job role"
+              >
+
+            </div>
+
+            <div class="field">
+
+              <label for="experienceDate">
+                Dates
+              </label>
+
+              <input
+                id="experienceDate"
+                type="text"
+                placeholder="2024 – Present"
+              >
+
+            </div>
+
+            <div class="field">
+
+              <label for="experience">
+                Experience Details
+              </label>
+
+              <textarea
+                id="experience"
+                placeholder="Describe your responsibilities, achievements, projects or results..."
+              ></textarea>
+
+            </div>
+
+            <div class="section-label">
+              Education
+            </div>
+
+            <div class="field">
+
+              <label for="degree">
+                Degree
+              </label>
+
+              <input
+                id="degree"
+                type="text"
+                placeholder="B.Tech Computer Science"
+              >
+
+            </div>
+
+            <div class="field">
+
+              <label for="school">
+                School / University
+              </label>
+
+              <input
+                id="school"
+                type="text"
+                placeholder="University name"
+              >
+
+            </div>
+
+            <div class="field">
+
+              <label for="educationDate">
+                Year
+              </label>
+
+              <input
+                id="educationDate"
+                type="text"
+                placeholder="2022 – 2026"
+              >
+
+            </div>
+
+            <div class="field">
+
+              <label for="grade">
+                Grade / Score
+              </label>
+
+              <input
+                id="grade"
+                type="text"
+                placeholder="8.5 CGPA"
+              >
+
+            </div>
+
+            <div class="section-label">
+              Skills
+            </div>
+
+            <div class="field full">
+
+              <label for="skills">
+                Skills
+              </label>
+
+              <input
+                id="skills"
+                type="text"
+                placeholder="JavaScript, React, Python, SQL, Communication"
+              >
+
+            </div>
+
+            <div class="section-label">
+              Optional Information
+            </div>
+
+            <div class="field full">
+
+              <label for="projects">
+                Projects / Achievements
+              </label>
+
+              <textarea
+                id="projects"
+                placeholder="Mention important projects, certifications, achievements or awards..."
+              ></textarea>
+
+            </div>
+
+          </div>
+
+          <button
+            class="ai-button"
+            id="generateButton"
+            type="button"
+          >
+            ✦ Generate Resume with AI
+          </button>
+
+          <div class="secondary-actions">
+
+            <button
+              class="secondary-button"
+              id="demoButton"
+              type="button"
+            >
+              Load Example
+            </button>
+
+            <button
+              class="secondary-button"
+              id="clearButton"
+              type="button"
+            >
+              Clear
+            </button>
+
+          </div>
+
+          <div
+            class="status"
+            id="status"
+            aria-live="polite"
+          ></div>
+
+        </div>
+
+      </div>
+
+      <!-- =====================================================
+           PREVIEW PANEL
+           ===================================================== -->
+
+      <div class="panel">
+
+        <div class="panel-header">
+
+          <div>
+            <div class="panel-title">
+              Resume Preview
+            </div>
+
+            <div class="panel-subtitle">
+              Your resume updates as you generate it.
+            </div>
+          </div>
+
+        </div>
+
+        <div class="preview-area">
+
+          <article
+            class="resume-paper"
+            id="resumePaper"
+          >
+
+            <div
+              class="resume-name"
+              id="previewName"
+            >
+              Your Name
+            </div>
+
+            <div
+              class="resume-role"
+              id="previewRole"
+            >
+              Professional Title
+            </div>
+
+            <div
+              class="resume-contact"
+              id="previewContact"
+            >
+              email@example.com · +91 00000 00000 · Your Location
+            </div>
+
+            <div class="resume-divider"></div>
+
+            <section class="resume-section">
+
+              <h3>
+                Professional Summary
+              </h3>
+
+              <p id="previewSummary">
+                Your professional summary will appear here.
+                Add your background and use the AI generator
+                to improve your resume content.
+              </p>
+
+            </section>
+
+            <section class="resume-section">
+
+              <h3>
+                Experience
+              </h3>
+
+              <div class="experience-item">
+
+                <div class="experience-heading">
+
+                  <span id="previewRole2">
+                    Your Role
+                  </span>
+
+                  <span id="previewDate">
+                    Dates
+                  </span>
+
+                </div>
+
+                <div
+                  class="experience-company"
+                  id="previewCompany"
+                >
+                  Company Name
+                </div>
+
+                <p id="previewExperience">
+                  Your professional experience will appear here.
+                </p>
+
+              </div>
+
+            </section>
+
+            <section class="resume-section">
+
+              <h3>
+                Education
+              </h3>
+
+              <div class="experience-item">
+
+                <div class="experience-heading">
+
+                  <span id="previewDegree">
+                    Degree
+                  </span>
+
+                  <span id="previewEducationDate">
+                    Year
+                  </span>
+
+                </div>
+
+                <div
+                  class="experience-company"
+                  id="previewSchool"
+                >
+                  University
+                </div>
+
+                <p id="previewGrade">
+                  Grade / Score
+                </p>
+
+              </div>
+
+            </section>
+
+            <section class="resume-section">
+
+              <h3>
+                Skills
+              </h3>
+
+              <div
+                class="skill-list"
+                id="previewSkills"
+              >
+                <span class="skill">
+                  Your skills
+                </span>
+              </div>
+
+            </section>
+
+            <section class="resume-section">
+
+              <h3>
+                Projects & Achievements
+              </h3>
+
+              <p id="previewProjects">
+                Your projects and achievements will appear here.
+              </p>
+
+            </section>
+
+          </article>
+
+          <button
+            class="print-button"
+            type="button"
+            onclick="window.print()"
+          >
+            Print / Save as PDF
+          </button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- =======================================================
+         LOWER AD
+         ======================================================= -->
+
+    <section
+      class="ad-section"
+      aria-label="Advertisement"
+    >
+
+      <span class="ad-label">
+        Advertisement
+      </span>
+
+      <div class="ad-slot">
+        <!-- Clickadilla / adManager script loaded in HEAD -->
+      </div>
+
+    </section>
+
+    <!-- =======================================================
+         LONG SEO CONTENT
+         ======================================================= -->
+
+    <section class="content">
+
+      <h2>
+        AI Resume Builder for Professional and ATS-Friendly Resumes
+      </h2>
+
+      <p>
+        Creating a professional resume can take a lot of time,
+        especially when you are trying to describe your experience,
+        achievements and skills in a clear way. A good resume should
+        communicate your value quickly while remaining easy for
+        recruiters and applicant tracking systems to understand.
+        This AI resume builder is designed to make that process simpler.
+      </p>
+
+      <p>
+        Instead of starting with a blank document, you can enter your
+        basic information and use artificial intelligence to improve
+        important parts of your resume. The goal is to help you create
+        clear, concise and professional content that represents your
+        actual experience.
+      </p>
+
+      <h3>
+        What Is an AI Resume Builder?
+      </h3>
+
+      <p>
+        An AI resume builder is an online tool that uses artificial
+        intelligence to assist with resume writing. Traditional resume
+        builders usually provide templates and formatting controls.
+        An AI-powered builder can additionally help transform basic
+        information into more polished professional language.
+      </p>
+
+      <p>
+        For example, instead of manually writing a complicated
+        professional summary, you can provide a short description of
+        your background and career goals. AI can then help organize
+        that information into a more professional paragraph.
+      </p>
+
+      <p>
+        The same approach can be used for work experience, projects,
+        achievements and skills. You should always review AI-generated
+        information and make sure every statement accurately represents
+        your real experience.
+      </p>
+
+      <h3>
+        Why Is a Professional Resume Important?
+      </h3>
+
+      <p>
+        A resume is often one of the first documents a recruiter sees
+        when evaluating a job application. A well-organized resume can
+        make important information easier to find, including your
+        experience, education, technical skills and achievements.
+      </p>
+
+      <p>
+        A strong resume does not need to be complicated. In many cases,
+        clarity is more useful than excessive design. Recruiters may
+        review many applications, so your most relevant information
+        should be easy to identify.
+      </p>
+
+      <p>
+        Your resume should also be adapted to the position you are
+        applying for. Different jobs emphasize different skills.
+        A software developer may highlight programming languages,
+        projects and technical achievements, while a marketing
+        professional may focus on campaigns, growth metrics and
+        communication skills.
+      </p>
+
+      <h3>
+        What Does ATS-Friendly Mean?
+      </h3>
+
+      <p>
+        ATS stands for Applicant Tracking System. Many organizations
+        use software to help organize and process job applications.
+        Depending on the system and employer, resumes may be parsed
+        into structured information before recruiters review them.
+      </p>
+
+      <p>
+        An ATS-friendly resume generally benefits from clear headings,
+        readable text, conventional section names and straightforward
+        formatting. Using excessive graphics, unusual layouts or
+        complicated visual elements can sometimes make information
+        harder for software to interpret.
+      </p>
+
+      <div class="info-card">
+
+        <strong>
+          Helpful ATS principle:
+        </strong>
+
+        <p>
+          Keep important information in recognizable sections such as
+          Summary, Experience, Education and Skills. Use terminology
+          that accurately matches the job description when those skills
+          genuinely apply to you.
+        </p>
+
+      </div>
+
+      <h3>
+        How to Use This AI Resume Builder
+      </h3>
+
+      <ol>
+
+        <li>
+          Enter your full name.
+        </li>
+
+        <li>
+          Add the job title you are targeting.
+        </li>
+
+        <li>
+          Enter your email, phone number and location.
+        </li>
+
+        <li>
+          Describe your professional background.
+        </li>
+
+        <li>
+          Add your work experience.
+        </li>
+
+        <li>
+          Enter your education details.
+        </li>
+
+        <li>
+          Add relevant technical and soft skills.
+        </li>
+
+        <li>
+          Mention projects, certifications and achievements.
+        </li>
+
+        <li>
+          Select the AI generation button.
+        </li>
+
+        <li>
+          Review the generated content carefully.
+        </li>
+
+        <li>
+          Edit anything that does not accurately describe you.
+        </li>
+
+        <li>
+          Use the print option to save your final resume as a PDF.
+        </li>
+
+      </ol>
+
+      <h3>
+        How AI Can Improve a Professional Summary
+      </h3>
+
+      <p>
+        A professional summary should provide a short overview of
+        your experience, strengths and career direction. One common
+        problem with resume summaries is that they contain generic
+        statements that do not tell recruiters anything specific.
+      </p>
+
+      <p>
+        AI can help turn rough notes into more structured writing.
+        However, the information should still come from your actual
+        background. Avoid adding skills, degrees, job responsibilities
+        or achievements that you do not have.
+      </p>
+
+      <p>
+        For students and recent graduates, a summary can focus on
+        education, relevant projects, internships, technical skills
+        and career interests. For experienced professionals, the
+        summary can focus more on years of experience, specialization,
+        measurable accomplishments and leadership responsibilities.
+      </p>
+
+      <h3>
+        Writing Better Work Experience
+      </h3>
+
+      <p>
+        Work experience is one of the most important parts of a resume.
+        Instead of only listing daily responsibilities, consider
+        describing what you actually accomplished. Where appropriate,
+        measurable information can make achievements easier to
+        understand.
+      </p>
+
+      <p>
+        For example, if you genuinely increased website traffic,
+        reduced processing time, improved conversion rate, managed a
+        team or delivered projects, those outcomes can provide useful
+        context.
+      </p>
+
+      <p>
+        AI can help improve the wording, but the underlying facts should
+        always remain accurate.
+      </p>
+
+      <h3>
+        Resume Skills Section
+      </h3>
+
+      <p>
+        The skills section should contain abilities that are relevant
+        to the role you are applying for. Including every skill you
+        have ever encountered can make the section less focused.
+      </p>
+
+      <p>
+        Technical skills can include programming languages, frameworks,
+        software, databases, analytics platforms and other relevant
+        tools. Soft skills can include communication, collaboration,
+        organization and leadership when they are genuinely supported
+        by your experience.
+      </p>
+
+      <p>
+        Read the job description carefully and identify the skills
+        that genuinely match your background. This can help you decide
+        which relevant skills deserve greater visibility on your resume.
+      </p>
+
+      <h3>
+        Resume for Students
+      </h3>
+
+      <p>
+        Students often worry that they do not have enough experience
+        to create a strong resume. A student resume can still include
+        education, academic projects, internships, certifications,
+        volunteer work, competitions, relevant coursework and technical
+        skills.
+      </p>
+
+      <p>
+        If you have built a website, application, research project,
+        business project or other meaningful work, describe what you
+        built, the technologies used and what you learned or achieved.
+      </p>
+
+      <h3>
+        Resume for Freshers
+      </h3>
+
+      <p>
+        Fresh graduates can focus on demonstrating potential through
+        education, projects, internships, certifications and relevant
+        skills. The resume should remain concise and focused on the
+        position being targeted.
+      </p>
+
+      <p>
+        Avoid filling space with unrelated information simply because
+        the resume looks short. Relevant evidence is usually more
+        useful than unnecessary content.
+      </p>
+
+      <h3>
+        Resume for Experienced Professionals
+      </h3>
+
+      <p>
+        Experienced candidates can use their resume to demonstrate
+        progression, specialization and results. Strong experience
+        sections often show the scope of responsibilities and concrete
+        achievements.
+      </p>
+
+      <p>
+        If you have many years of experience, prioritize information
+        that is most relevant to your target role. Older or unrelated
+        experience may need less space than recent and relevant work.
+      </p>
+
+      <h3>
+        How to Make a Resume More Recruiter-Friendly
+      </h3>
+
+      <p>
+        A recruiter-friendly resume should be easy to scan. Clear
+        headings, consistent formatting, concise descriptions and
+        relevant keywords can improve readability.
+      </p>
+
+      <ul>
+
+        <li>
+          Use a clear professional name and job title.
+        </li>
+
+        <li>
+          Keep contact information easy to locate.
+        </li>
+
+        <li>
+          Use recognizable section headings.
+        </li>
+
+        <li>
+          Keep descriptions concise.
+        </li>
+
+        <li>
+          Highlight relevant achievements.
+        </li>
+
+        <li>
+          Remove unnecessary information.
+        </li>
+
+        <li>
+          Proofread before submitting.
+        </li>
+
+      </ul>
+
+      <h3>
+        Resume Keywords and Job Descriptions
+      </h3>
+
+      <p>
+        Job descriptions often contain terminology that describes the
+        employer's requirements. If you genuinely have those skills,
+        using accurate terminology in your resume can make your
+        qualifications easier to identify.
+      </p>
+
+      <p>
+        Keyword optimization should never mean copying an entire job
+        description or claiming skills you do not possess. Your resume
+        should remain truthful and relevant.
+      </p>
+
+      <h3>
+        Common Resume Mistakes
+      </h3>
+
+      <p>
+        One common mistake is using a generic resume for every job.
+        Another is writing long paragraphs that are difficult to scan.
+        Spelling errors, inconsistent dates and inaccurate information
+        can also reduce the professionalism of an application.
+      </p>
+
+      <p>
+        Other issues include excessive decoration, irrelevant personal
+        information and unsupported claims. A professional resume
+        should focus on information that helps an employer understand
+        your qualifications for the specific position.
+      </p>
+
+      <h3>
+        Should You Use AI to Write Your Entire Resume?
+      </h3>
+
+      <p>
+        AI can be useful for drafting and improving resume language,
+        but your resume should remain your own accurate representation.
+        The best workflow is generally to provide genuine information,
+        allow AI to help structure or improve the wording, and then
+        review every generated statement.
+      </p>
+
+      <p>
+        Never allow an AI system to invent employment history,
+        qualifications, certifications or achievements. Accuracy is
+        more important than impressive-sounding language.
+      </p>
+
+      <h3>
+        Resume Formatting Tips
+      </h3>
+
+      <p>
+        Keep the design clean and consistent. Use a readable font,
+        consistent spacing and clear section hierarchy. Avoid using
+        unnecessary decorative elements that distract from the actual
+        content.
+      </p>
+
+      <p>
+        The appropriate resume length depends on your experience and
+        the requirements of the position. Early-career applicants may
+        have a shorter resume, while experienced professionals may
+        require more space to communicate relevant career history.
+      </p>
+
+      <h3>
+        Creating a Resume for International Jobs
+      </h3>
+
+      <p>
+        Resume conventions vary between countries and industries.
+        Before applying internationally, check the expectations of
+        the specific country, employer and profession.
+      </p>
+
+      <p>
+        In particular, personal information requirements can differ.
+        Avoid automatically adding sensitive personal details unless
+        they are genuinely required by the relevant application.
+      </p>
+
+      <h3>
+        Resume for Remote Jobs
+      </h3>
+
+      <p>
+        Remote positions may place additional emphasis on
+        communication, collaboration, independent work and familiarity
+        with digital tools. If these capabilities are relevant to the
+        position and supported by your experience, make them visible
+        through your experience and projects.
+      </p>
+
+      <h3>
+        Resume for Software Developers
+      </h3>
+
+      <p>
+        Developers can highlight programming languages, frameworks,
+        databases, development tools and meaningful projects.
+        Project descriptions can explain the problem, technology,
+        contribution and outcome.
+      </p>
+
+      <p>
+        Instead of listing dozens of technologies without context,
+        prioritize those that are relevant to the role and demonstrate
+        them through actual projects or professional experience.
+      </p>
+
+      <h3>
+        Resume for Marketing Professionals
+      </h3>
+
+      <p>
+        Marketing resumes can emphasize campaigns, audience growth,
+        conversion improvements, content strategy, analytics and
+        measurable business outcomes where applicable.
+      </p>
+
+      <h3>
+        Resume for Finance Professionals
+      </h3>
+
+      <p>
+        Finance candidates can emphasize relevant financial analysis,
+        accounting knowledge, reporting, modeling, investment research,
+        certifications and professional experience depending on the
+        target role.
+      </p>
+
+      <h3>
+        Resume for Designers
+      </h3>
+
+      <p>
+        Designers can include relevant design tools, disciplines,
+        projects and outcomes. A resume can complement a portfolio,
+        but the portfolio should provide the deeper visual evidence of
+        design capability.
+      </p>
+
+      <h3>
+        Why Simplicity Matters
+      </h3>
+
+      <p>
+        A resume is a communication document rather than a decorative
+        poster. A visually attractive design can be useful, but the
+        most important information should remain easy to read.
+      </p>
+
+      <p>
+        This builder therefore focuses on a clean structure that can
+        be reviewed quickly and printed as a conventional document.
+      </p>
+
+      <h3>
+        Review Your Resume Before Applying
+      </h3>
+
+      <p>
+        Always perform a final review before sending your resume.
+        Check names, phone numbers, email addresses, dates, company
+        names, job titles and educational information.
+      </p>
+
+      <p>
+        Read the resume from the perspective of someone who does not
+        know you. Ask whether the document quickly explains what you
+        do, what experience you have and why your background is relevant
+        to the position.
+      </p>
+
+      <h3>
+        Free Online Resume Creation
+      </h3>
+
+      <p>
+        Online resume tools can reduce the amount of formatting work
+        required to create a professional document. A useful resume
+        builder should provide a straightforward workflow, responsive
+        design and an easy way to export or print the final document.
+      </p>
+
+      <p>
+        This tool is designed to provide those core capabilities in a
+        simple browser-based experience. You can use it on desktop,
+        tablet or mobile devices.
+      </p>
+
+      <h3>
+        AI Resume Builder Features
+      </h3>
+
+      <ul>
+
+        <li>
+          AI-assisted resume writing.
+        </li>
+
+        <li>
+          Professional summary generation.
+        </li>
+
+        <li>
+          Experience description improvement.
+        </li>
+
+        <li>
+          Skills organization.
+        </li>
+
+        <li>
+          Education section.
+        </li>
+
+        <li>
+          Projects and achievements section.
+        </li>
+
+        <li>
+          Live resume preview.
+        </li>
+
+        <li>
+          Responsive mobile design.
+        </li>
+
+        <li>
+          Browser-based PDF printing.
+        </li>
+
+        <li>
+          Clean and readable resume structure.
+        </li>
+
+      </ul>
+
+      <h3>
+        Final Resume Checklist
+      </h3>
+
+      <ol>
+
+        <li>
+          Is your name clearly visible?
+        </li>
+
+        <li>
+          Is your contact information correct?
+        </li>
+
+        <li>
+          Is your target job clear?
+        </li>
+
+        <li>
+          Is your summary relevant?
+        </li>
+
+        <li>
+          Are your dates accurate?
+        </li>
+
+        <li>
+          Are your achievements truthful?
+        </li>
+
+        <li>
+          Are your skills relevant?
+        </li>
+
+        <li>
+          Have you removed unnecessary information?
+        </li>
+
+        <li>
+          Have you checked spelling and grammar?
+        </li>
+
+        <li>
+          Have you reviewed the final PDF before sending it?
+        </li>
+
+      </ol>
+
+      <div class="info-card">
+
+        <strong>
+          Important:
+        </strong>
+
+        <p>
+          AI-generated resume content should always be reviewed by the
+          applicant. Do not submit information that is inaccurate,
+          misleading or invented.
+        </p>
+
+      </div>
+
+      <h3>
+        Frequently Used Resume Sections
+      </h3>
+
+      <p>
+        Depending on your background, a resume can contain a
+        professional summary, work experience, education, skills,
+        projects, certifications, awards and other relevant sections.
+        The exact combination should reflect your actual experience
+        and the requirements of the position.
+      </p>
+
+      <p>
+        The most important principle is relevance. Every section should
+        contribute useful information to the person evaluating your
+        application.
+      </p>
+
+      <h3>
+        Build Your Resume With Confidence
+      </h3>
+
+      <p>
+        Writing a resume does not have to begin with a perfect
+        sentence. Start with accurate information about yourself.
+        Once the important facts are available, AI can help organize
+        them into clearer professional language.
+      </p>
+
+      <p>
+        Take time to review the result, personalize the wording and
+        make sure the final document sounds like you. A strong resume
+        is not simply a collection of keywords. It is a concise
+        explanation of your professional background and the value you
+        can bring to a role.
+      </p>
+
+    </section>
+
+    <!-- =======================================================
+         FAQ
+         ======================================================= -->
+
+    <section class="faq" id="faq">
+
+      <h2>
+        Frequently Asked Questions
+      </h2>
+
+      <details>
+        <summary>
+          Is this AI resume builder free?
+        </summary>
+
+        <p>
+          Yes. The interface is designed as a free online resume
+          creation tool without requiring a subscription.
+        </p>
+
+      </details>
+
+      <details>
+        <summary>
+          Can I create an ATS-friendly resume?
+        </summary>
+
+        <p>
+          The resume structure uses standard headings and readable
+          formatting designed to make important information easier
+          for both people and resume-processing software to interpret.
+        </p>
+
+      </details>
+
+      <details>
+        <summary>
+          Can I save my resume as PDF?
+        </summary>
+
+        <p>
+          Yes. Click “Print / Save as PDF” and choose “Save as PDF”
+          in your browser's print dialog.
+        </p>
+
+      </details>
+
+      <details>
+        <summary>
+          Does the resume have a watermark?
+        </summary>
+
+        <p>
+          The resume template generated by this page does not add a
+          watermark.
+        </p>
+
+      </details>
+
+      <details>
+        <summary>
+          Can I use the resume on mobile?
+        </summary>
+
+        <p>
+          Yes. The page is responsive and the builder adjusts its
+          layout for smaller screens.
+        </p>
+
+      </details>
+
+      <details>
+        <summary>
+          Can students use this resume builder?
+        </summary>
+
+        <p>
+          Yes. Students can use education, projects, certifications,
+          internships, achievements and relevant skills to build their
+          resume.
+        </p>
+
+      </details>
+
+      <details>
+        <summary>
+          Can freshers create a resume?
+        </summary>
+
+        <p>
+          Yes. Freshers can focus on education, projects, internships,
+          certifications and relevant skills.
+        </p>
+
+      </details>
+
+      <details>
+        <summary>
+          Should I trust every AI-generated sentence?
+        </summary>
+
+        <p>
+          No. Always review AI-generated content and remove or correct
+          anything that does not accurately describe your real
+          background.
+        </p>
+
+      </details>
+
+      <details>
+        <summary>
+          Does AI guarantee a job interview?
+        </summary>
+
+        <p>
+          No. A resume builder can help with writing and presentation,
+          but hiring decisions depend on many factors including
+          qualifications, experience, role requirements and employer
+          decisions.
+        </p>
+
+      </details>
+
+      <details>
+        <summary>
+          What should I put in the skills section?
+        </summary>
+
+        <p>
+          Include relevant skills that you genuinely possess and that
+          relate to the position you are applying for.
+        </p>
+
+      </details>
+
+    </section>
+
+  </main>
+
+  <!-- =========================================================
+       FOOTER
+       ========================================================= -->
+
+  <footer>
+
+    <div class="footer-inner">
+
+      <div class="footer-top">
+
+        <div>
+
+          <div class="footer-brand">
+            ResumeCraft AI
+          </div>
+
+          <p>
+            A simple AI-powered online resume builder designed to help
+            job seekers, students and professionals create clear,
+            professional and readable resumes.
+          </p>
+
+        </div>
+
+        <div>
+
+          <h4>
+            Navigation
+          </h4>
+
+          <div class="footer-links">
+
+            <a href="#">
+              Home
+            </a>
+
+            <a href="#builder">
+              Resume Builder
+            </a>
+
+            <a href="#faq">
+              FAQ
+            </a>
+
+            <a
+              href="https://fixoraa.tech"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              More Tools
+            </a>
+
+          </div>
+
+        </div>
+
+        <div>
+
+          <h4>
+            Information
+          </h4>
+
+          <div class="footer-links">
+
+            <a href="#terms">
+              Terms
+            </a>
+
+            <a href="#privacy">
+              Privacy
+            </a>
+
+            <a href="#disclaimer">
+              Disclaimer
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div
+        class="copyright"
+        id="terms"
+      >
+        © 2026 ResumeCraft AI. All rights reserved.
+        Use of this website is subject to its applicable terms.
+      </div>
+
+    </div>
+
+  </footer>
+
+  <!-- =========================================================
+       TOAST
+       ========================================================= -->
+
+  <div
+    class="toast"
+    id="toast"
+    role="status"
+    aria-live="polite"
+  ></div>
+
+  <script>
+
+    /* =========================================================
+       CONFIGURATION
+       ========================================================= */
+
+    /*
+      IMPORTANT SECURITY NOTE:
+
+      Do NOT put a private AI API key directly into this browser
+      file in production.
+
+      Recommended architecture:
+
+      Browser
+          ↓
+      Your gateway
+          ↓
+      AI provider
+
+      Store the secret API key inside your gateway/server
+      environment variables.
+
+      Example server environment:
+
+      VITE_API_BASE_URL is NOT required by plain HTML.
+      The browser can call the gateway URL directly.
+
+      If your gateway expects an Authorization header, configure
+      authentication on the gateway side rather than exposing the
+      provider secret here.
+    */
+
+    const API_BASE_URL =
+      "https://fixoraa-gateway.onrender.com";
+
+    /* =========================================================
+       DOM HELPERS
+       ========================================================= */
+
+    const $ = (id) => document.getElementById(id);
+
+    const fullName = $("fullName");
+    const jobTitle = $("jobTitle");
+    const email = $("email");
+    const phone = $("phone");
+    const locationInput = $("location");
+    const summary = $("summary");
+    const company = $("company");
+    const role = $("role");
+    const experienceDate = $("experienceDate");
+    const experience = $("experience");
+    const degree = $("degree");
+    const school = $("school");
+    const educationDate = $("educationDate");
+    const grade = $("grade");
+    const skills = $("skills");
+    const projects = $("projects");
+
+    const generateButton =
+      $("generateButton");
+
+    const status =
+      $("status");
+
+    /* =========================================================
+       TOAST
+       ========================================================= */
+
+    function showToast(message) {
+
+      const toast = $("toast");
+
+      toast.textContent = message;
+
+      toast.classList.add("show");
+
+      setTimeout(() => {
+        toast.classList.remove("show");
+      }, 2800);
+    }
+
+    /* =========================================================
+       ESCAPE HTML
+       ========================================================= */
+
+    function escapeHTML(value) {
+
+      return String(value || "")
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+    }
+
+    /* =========================================================
+       LIVE PREVIEW
+       ========================================================= */
+
+    function updatePreview() {
+
+      $("previewName").textContent =
+        fullName.value.trim() ||
+        "Your Name";
+
+      $("previewRole").textContent =
+        jobTitle.value.trim() ||
+        "Professional Title";
+
+      const contactParts = [
+        email.value.trim(),
+        phone.value.trim(),
+        locationInput.value.trim()
+      ].filter(Boolean);
+
+      $("previewContact").textContent =
+        contactParts.length
+          ? contactParts.join(" · ")
+          : "email@example.com · +91 00000 00000 · Your Location";
+
+      $("previewSummary").textContent =
+        summary.value.trim() ||
+        "Your professional summary will appear here.";
+
+      $("previewRole2").textContent =
+        role.value.trim() ||
+        "Your Role";
+
+      $("previewDate").textContent =
+        experienceDate.value.trim() ||
+        "Dates";
+
+      $("previewCompany").textContent =
+        company.value.trim() ||
+        "Company Name";
+
+      $("previewExperience").textContent =
+        experience.value.trim() ||
+        "Your professional experience will appear here.";
+
+      $("previewDegree").textContent =
+        degree.value.trim() ||
+        "Degree";
+
+      $("previewEducationDate").textContent =
+        educationDate.value.trim() ||
+        "Year";
+
+      $("previewSchool").textContent =
+        school.value.trim() ||
+        "University";
+
+      $("previewGrade").textContent =
+        grade.value.trim() ||
+        "Grade / Score";
+
+      renderSkills(
+        skills.value.trim()
+      );
+
+      $("previewProjects").textContent =
+        projects.value.trim() ||
+        "Your projects and achievements will appear here.";
+    }
+
+    /* =========================================================
+       SKILLS
+       ========================================================= */
+
+    function renderSkills(value) {
+
+      const container =
+        $("previewSkills");
+
+      container.innerHTML = "";
+
+      const list = value
+        .split(",")
+        .map(item => item.trim())
+        .filter(Boolean);
+
+      if (!list.length) {
+
+        const item =
+          document.createElement("span");
+
+        item.className = "skill";
+
+        item.textContent =
+          "Your skills";
+
+        container.appendChild(item);
+
+        return;
+      }
+
+      list.forEach(skillName => {
+
+        const item =
+          document.createElement("span");
+
+        item.className = "skill";
+
+        item.textContent =
+          skillName;
+
+        container.appendChild(item);
+
+      });
+    }
+
+    /* =========================================================
+       INPUT EVENTS
+       ========================================================= */
+
+    [
+      fullName,
+      jobTitle,
+      email,
+      phone,
+      locationInput,
+      summary,
+      company,
+      role,
+      experienceDate,
+      experience,
+      degree,
+      school,
+      educationDate,
+      grade,
+      skills,
+      projects
+    ].forEach(input => {
+
+      input.addEventListener(
+        "input",
+        updatePreview
+      );
+
+    });
+
+    /* =========================================================
+       COLLECT DATA
+       ========================================================= */
+
+    function collectResumeData() {
+
+      return {
+
+        fullName:
+          fullName.value.trim(),
+
+        jobTitle:
+          jobTitle.value.trim(),
+
+        email:
+          email.value.trim(),
+
+        phone:
+          phone.value.trim(),
+
+        location:
+          locationInput.value.trim(),
+
+        summary:
+          summary.value.trim(),
+
+        experience: {
+
+          company:
+            company.value.trim(),
+
+          role:
+            role.value.trim(),
+
+          dates:
+            experienceDate.value.trim(),
+
+          details:
+            experience.value.trim()
+
+        },
+
+        education: {
+
+          degree:
+            degree.value.trim(),
+
+          school:
+            school.value.trim(),
+
+          dates:
+            educationDate.value.trim(),
+
+          grade:
+            grade.value.trim()
+
+        },
+
+        skills:
+          skills.value.trim(),
+
+        projects:
+          projects.value.trim()
+
+      };
+    }
+
+    /* =========================================================
+       PROMPT
+       ========================================================= */
+
+    function createPrompt(data) {
+
+      return `
+You are an expert professional resume writer.
+
+Create improved resume content from the candidate information below.
+
+IMPORTANT:
+- Never invent employment history.
+- Never invent qualifications.
+- Never invent certifications.
+- Never invent achievements.
+- Do not add facts that are not supported by the provided information.
+- Improve wording while preserving the candidate's real information.
+- Keep the writing professional and concise.
+- Optimize wording for clarity and ATS readability.
+- Use standard resume terminology.
+
+Candidate:
+
+Name:
+${data.fullName}
+
+Target Role:
+${data.jobTitle}
+
+Email:
+${data.email}
+
+Phone:
+${data.phone}
+
+Location:
+${data.location}
+
+Existing Summary:
+${data.summary}
+
+Experience:
+Company: ${data.experience.company}
+Role: ${data.experience.role}
+Dates: ${data.experience.dates}
+Details: ${data.experience.details}
+
+Education:
+Degree: ${data.education.degree}
+Institution: ${data.education.school}
+Dates: ${data.education.dates}
+Grade: ${data.education.grade}
+
+Skills:
+${data.skills}
+
+Projects/Achievements:
+${data.projects}
+
+Return JSON only in this structure:
+
+{
+  "summary": "Professional summary",
+  "experience": "Improved experience description",
+  "skills": ["skill 1", "skill 2"],
+  "projects": "Improved projects or achievements description"
+}
+`;
+    }
+
+    /* =========================================================
+       API RESPONSE EXTRACTION
+       ========================================================= */
+
+    function extractTextFromResponse(data) {
+
+      if (!data) {
+        return "";
+      }
+
+      if (typeof data === "string") {
+        return data;
+      }
+
+      if (data.output_text) {
+        return data.output_text;
+      }
+
+      if (data.text) {
+        return data.text;
+      }
+
+      if (data.response) {
+
+        if (typeof data.response === "string") {
+          return data.response;
+        }
+
+        if (data.response.text) {
+          return data.response.text;
+        }
+
+      }
+
+      if (data.choices &&
+          data.choices[0]) {
+
+        const choice =
+          data.choices[0];
+
+        if (choice.message &&
+            choice.message.content) {
+
+          return choice.message.content;
+        }
+
+        if (choice.text) {
+          return choice.text;
+        }
+      }
+
+      return "";
+    }
+
+    /* =========================================================
+       CLEAN JSON
+       ========================================================= */
+
+    function parseAIJSON(text) {
+
+      let cleaned =
+        String(text || "")
+          .trim();
+
+      cleaned =
+        cleaned.replace(
+          /^```json/i,
+          ""
+        );
+
+      cleaned =
+        cleaned.replace(
+          /^```/,
+          ""
+        );
+
+      cleaned =
+        cleaned.replace(
+          /```$/,
+          ""
+        );
+
+      cleaned =
+        cleaned.trim();
+
+      try {
+        return JSON.parse(cleaned);
+      } catch (error) {
+
+        const start =
+          cleaned.indexOf("{");
+
+        const end =
+          cleaned.lastIndexOf("}");
+
+        if (
+          start !== -1 &&
+          end !== -1 &&
+          end > start
+        ) {
+
+          return JSON.parse(
+            cleaned.slice(
+              start,
+              end + 1
+            )
+          );
+        }
+
+        throw error;
+      }
+    }
+
+    /* =========================================================
+       CALL AI GATEWAY
+       ========================================================= */
+
+    async function generateWithAI() {
+
+      const data =
+        collectResumeData();
+
+      if (!data.fullName) {
+
+        showToast(
+          "Please enter your name first."
+        );
+
+        fullName.focus();
+
+        return;
+      }
+
+      generateButton.disabled = true;
+
+      status.textContent =
+        "AI is improving your resume content...";
+
+      try {
+
+        const prompt =
+          createPrompt(data);
+
+        /*
+          The exact endpoint depends on how your gateway
+          is implemented.
+
+          This first attempts a common /v1/chat/completions
+          compatible endpoint.
+        */
+
+        const response =
+          await fetch(
+            API_BASE_URL +
+            "/v1/chat/completions",
+            {
+
+              method: "POST",
+
+              headers: {
+                "Content-Type":
+                  "application/json"
+              },
+
+              body: JSON.stringify({
+
+                model: "gpt-4o-mini",
+
+                messages: [
+
+                  {
+                    role: "system",
+                    content:
+                      "You are a professional resume writer. Return valid JSON only."
+                  },
+
+                  {
+                    role: "user",
+                    content: prompt
+                  }
+
+                ],
+
+                temperature: 0.5
+
+              })
+
+            }
+          );
+
+        if (!response.ok) {
+
+          throw new Error(
+            "Gateway returned HTTP " +
+            response.status
+          );
+        }
+
+        const result =
+          await response.json();
+
+        const text =
+          extractTextFromResponse(
+            result
+          );
+
+        if (!text) {
+
+          throw new Error(
+            "The AI gateway returned an empty response."
+          );
+        }
+
+        const ai =
+          parseAIJSON(text);
+
+        applyAIResult(ai);
+
+        status.textContent =
+          "Resume content generated successfully.";
+
+        showToast(
+          "Your resume has been improved with AI."
+        );
+
+      } catch (error) {
+
+        console.error(
+          "AI generation error:",
+          error
+        );
+
+        status.textContent =
+          "AI request failed. Your local resume editor still works.";
+
+        showToast(
+          "AI gateway connection failed."
+        );
+
+      } finally {
+
+        generateButton.disabled =
+          false;
+
+      }
+    }
+
+    /* =========================================================
+       APPLY AI RESULT
+       ========================================================= */
+
+    function applyAIResult(ai) {
+
+      if (ai.summary) {
+        summary.value =
+          ai.summary;
+      }
+
+      if (ai.experience) {
+        experience.value =
+          ai.experience;
+      }
+
+      if (Array.isArray(ai.skills)) {
+
+        skills.value =
+          ai.skills.join(", ");
+
+      }
+
+      if (ai.projects) {
+        projects.value =
+          ai.projects;
+      }
+
+      updatePreview();
+
+    }
+
+    /* =========================================================
+       DEMO DATA
+       ========================================================= */
+
+    function loadDemo() {
+
+      fullName.value =
+        "Alex Johnson";
+
+      jobTitle.value =
+        "Frontend Developer";
+
+      email.value =
+        "alex@example.com";
+
+      phone.value =
+        "+91 98765 43210";
+
+      locationInput.value =
+        "Kolkata, India";
+
+      summary.value =
+        "Frontend developer focused on building responsive and user-friendly web applications. Experienced with modern web technologies, interface development and performance-conscious digital experiences.";
+
+      company.value =
+        "Example Digital";
+
+      role.value =
+        "Frontend Developer";
+
+      experienceDate.value =
+        "2024 – Present";
+
+      experience.value =
+        "Developed responsive web interfaces, collaborated on product features and improved user-facing experiences using modern frontend technologies.";
+
+      degree.value =
+        "B.Tech in Computer Science";
+
+      school.value =
+        "Example University";
+
+      educationDate.value =
+        "2022 – 2026";
+
+      grade.value =
+        "8.5 CGPA";
+
+      skills.value =
+        "HTML, CSS, JavaScript, React, Git, Responsive Design";
+
+      projects.value =
+        "Built responsive web applications and personal projects focused on usability, performance and modern interface design.";
+
+      updatePreview();
+
+      showToast(
+        "Example resume loaded."
+      );
+    }
+
+    /* =========================================================
+       CLEAR
+       ========================================================= */
+
+    function clearAll() {
+
+      const fields = [
+        fullName,
+        jobTitle,
+        email,
+        phone,
+        locationInput,
+        summary,
+        company,
+        role,
+        experienceDate,
+        experience,
+        degree,
+        school,
+        educationDate,
+        grade,
+        skills,
+        projects
+      ];
+
+      fields.forEach(field => {
+        field.value = "";
+      });
+
+      updatePreview();
+
+      status.textContent = "";
+
+      showToast(
+        "Resume information cleared."
+      );
+    }
+
+    /* =========================================================
+       BUTTON EVENTS
+       ========================================================= */
+
+    generateButton.addEventListener(
+      "click",
+      generateWithAI
+    );
+
+    $("demoButton").addEventListener(
+      "click",
+      loadDemo
+    );
+
+    $("clearButton").addEventListener(
+      "click",
+      clearAll
+    );
+
+    /* =========================================================
+       LOCAL STORAGE
+       ========================================================= */
+
+    function saveDraft() {
+
+      try {
+
+        localStorage.setItem(
+          "resumecraft_draft",
+          JSON.stringify(
+            collectResumeData()
+          )
+        );
+
+      } catch (error) {
+
+        console.warn(
+          "Could not save draft."
+        );
+
+      }
+
+    }
+
+    function restoreDraft() {
+
+      try {
+
+        const saved =
+          localStorage.getItem(
+            "resumecraft_draft"
+          );
+
+        if (!saved) {
+          return;
+        }
+
+        const data =
+          JSON.parse(saved);
+
+        fullName.value =
+          data.fullName || "";
+
+        jobTitle.value =
+          data.jobTitle || "";
+
+        email.value =
+          data.email || "";
+
+        phone.value =
+          data.phone || "";
+
+        locationInput.value =
+          data.location || "";
+
+        summary.value =
+          data.summary || "";
+
+        company.value =
+          data.experience?.company || "";
+
+        role.value =
+          data.experience?.role || "";
+
+        experienceDate.value =
+          data.experience?.dates || "";
+
+        experience.value =
+          data.experience?.details || "";
+
+        degree.value =
+          data.education?.degree || "";
+
+        school.value =
+          data.education?.school || "";
+
+        educationDate.value =
+          data.education?.dates || "";
+
+        grade.value =
+          data.education?.grade || "";
+
+        skills.value =
+          data.skills || "";
+
+        projects.value =
+          data.projects || "";
+
+        updatePreview();
+
+      } catch (error) {
+
+        console.warn(
+          "Could not restore draft."
+        );
+
+      }
+    }
+
+    /* =========================================================
+       AUTOSAVE
+       ========================================================= */
+
+    setInterval(
+      saveDraft,
+      3000
+    );
+
+    /* =========================================================
+       INITIALIZE
+       ========================================================= */
+
+    restoreDraft();
+
+    updatePreview();
+
+  </script>
+
+</body>
+</html>
+````
