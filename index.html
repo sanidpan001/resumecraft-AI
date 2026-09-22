@@ -2630,7 +2630,7 @@
     */
 
     const API_BASE_URL =
-      "https://fixoraa-gateway.onrender.com";
+      "https://fixoraa-universal-backend.onrender.com";
 
     /* =========================================================
        DOM HELPERS
@@ -3123,14 +3123,14 @@ Return JSON only in this structure:
           The exact endpoint depends on how your gateway
           is implemented.
 
-          This first attempts a common /v1/chat/completions
+          This first attempts a common/api/groq 
           compatible endpoint.
         */
 
         const response =
           await fetch(
             API_BASE_URL +
-            "/v1/chat/completions",
+            "/api/groq",
             {
 
               method: "POST",
@@ -3142,7 +3142,7 @@ Return JSON only in this structure:
 
               body: JSON.stringify({
 
-                model: "gpt-4o-mini",
+                model: "model: "openai/gpt-oss-20b",
 
                 messages: [
 
